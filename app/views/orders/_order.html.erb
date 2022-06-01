@@ -1,0 +1,26 @@
+<div id="<%= dom_id order %>">
+
+  <p>
+    <strong>Date:</strong>
+    <%= order.order_date %>
+  </p>
+
+  <p>
+    <strong>Total price:</strong>
+    <%= order.total_price %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= order.status %>
+  </p>
+  <p>
+    <br>
+    <strong>Choosen menu:</strong><br>
+    <% order.orderdetails.each do |orderdetail| %><br>
+    <%= orderdetail.menu.name %> (Quantity: <%= orderdetail.quantity %>)<br><br>
+    Sub-total price: Rp. <%= orderdetail.sub_total_price %>
+    <% end %>
+  </p>
+
+</div>

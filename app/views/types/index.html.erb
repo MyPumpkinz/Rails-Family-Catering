@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Category Food</h1>
+
+<div id="types">
+  <% @types.each do |type| %>
+    <%= render type %>
+    <p>
+      <%= link_to "Show this type", type ,  class:'btn btn-primary btn-sm' %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Menu", root_path, class:'btn btn-outline-dark' %>
+<%= link_to "New type", new_type_path ,class:'btn btn-outline-dark' %>

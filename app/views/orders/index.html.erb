@@ -1,0 +1,38 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Orders</h1>
+
+<br><br>
+<table class="table table-striped table-bordered">
+
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Order Date</th>
+      <th scope="col">Order Status</th>
+      <th scope="col">Customer Name (Email)</th>
+      <th scope="col">Total Price</th>
+      <th scope="col" colspan="2">Action</th>
+    </tr>
+
+  <tbody>
+    <% @orders.each_with_index do |order, index| %>
+    <tr>
+      <td><%= index + 1 %></td>
+      <td><%= order.order_date %></td>
+      <td><%= order.status %></td>
+      <td><%= order.customer.name %> (<%= order.customer.email %>)</td>
+      <td><%= order.total_price %></td>
+      <td>
+          <%= link_to "Show", order, class:'btn btn-primary' %>
+      </td>
+      <td>
+          <%= button_to "Delete", order, method: :delete, class:'btn btn-danger' %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Menu", root_path, class:'btn btn-outline-dark' %>
+<%= link_to "Create Order", new_order_path, class:'btn btn-outline-dark' %>
+<%= link_to "Generate Report", orders_generate_report_path, class:'btn btn-warning' %>

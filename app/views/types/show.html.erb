@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @type %>
+
+<div>
+  <%= link_to "Edit this type", edit_type_path(@type), class:'btn btn-primary' %> |
+  <%= link_to "Back to types", types_path , class:'btn btn-primary'%>
+</div>
+<div class='btndelete'> 
+  <%= button_to "Destroy this type", @type, method: :delete, class:'btn btn-danger' %>
+</div>
