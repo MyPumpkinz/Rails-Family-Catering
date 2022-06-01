@@ -1,6 +1,12 @@
-# Backend - Final Project Assignment
+<img align='center' src = "https://github.com/MyPumpkinz/Rails-Gigih2.0-Family-Cathering/blob/main/Header.png">
 
-<img align='center' src = "#">
+# Family Catering with Ruby oh Rails
+
+This is a Final Project Assignment repository for Generasi GIGIH 2.0 Back-end Track. This project is a web apps that simulate the management of items and orders of a Catering business.
+
+## ERD
+
+<img align='center' src = "https://github.com/MyPumpkinz/Rails-Gigih2.0-Family-Cathering/blob/main/family-cathering.erd.png">
 
 
 ## User Stories 
