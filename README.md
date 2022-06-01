@@ -1,4 +1,4 @@
-<img align='center' src = "https://github.com/MyPumpkinz/Rails-Gigih2.0-Family-Cathering/blob/main/Header.png">
+<img align='center' src = "https://github.com/MyPumpkinz/Rails-Family-Cathering/blob/main/Header.png">
 
 # Family Catering with Ruby oh Rails
 
@@ -6,7 +6,7 @@ This is a Final Project Assignment repository for Generasi GIGIH 2.0 Back-end Tr
 
 ## ERD
 
-<img align='center' src = "https://github.com/MyPumpkinz/Rails-Gigih2.0-Family-Cathering/blob/main/family-cathering.erd.png">
+<img align='center' src = "https://github.com/MyPumpkinz/Rails-Family-Cathering/blob/main/family-cathering.erd.png">
 
 
 ## User Stories 
